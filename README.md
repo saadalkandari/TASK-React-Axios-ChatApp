@@ -4,11 +4,11 @@
 1. fork
 2. clone 
 3. `cd ` to the folder
-4. `yarn install`
-5. `yarn start`
+4. `npm install`
+5. `npm start`
 
 ## Instructions
-1. Install Axios `yarn add axios`
+1. Install Axios `npm install axios`
 2. in App.js `import axios from "axios"`
 
 ## Fetch rooms :
