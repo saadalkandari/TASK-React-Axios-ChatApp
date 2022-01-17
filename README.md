@@ -15,7 +15,7 @@
 1. a state for rooms is created for you in App.js
 2. in App.js create a fetchRooms function ( make sure to use : async , await, try and catch )
 3. fetchRooms should be triggred once App is rendered 
-4. dont forget to setRooms based on the response
+4. dont forget to setRooms based on the response coming from the API
 
 ## Create a room:
 1. a createRoom function has been created in App.js 
