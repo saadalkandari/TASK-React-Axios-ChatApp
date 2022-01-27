@@ -1,21 +1,18 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import MessageItem from './MessageItem';
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import MessageItem from "./MessageItem";
 
-function ChatRoom({rooms}) {
+const ChatRoom = ({ rooms }) => {
   const roomSlug = useParams().roomSlug;
   const room = rooms.find((room) => room.slug === roomSlug);
   const messagesList = room.messages.map((msg) => {
     return <MessageItem msg={msg.msg} />;
   });
-  const [msg, setMsg] = useState({ msg: '' });
+  const [msg, setMsg] = useState({ msg: "" });
   const handleChange = (event) => {
     setMsg({ ...msg, [event.target.name]: event.target.value });
   };
-  const handleSubmit = (event) => {
-
-
-  };
+  const handleSubmit = (event) => {};
 
   return (
     <div className="main__chatcontent">
@@ -52,5 +49,5 @@ function ChatRoom({rooms}) {
       </div>
     </div>
   );
-}
+};
 export default ChatRoom;

@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-export default function MessageItem({msg}) {
+const MessageItem = ({ msg }) => {
   return (
     // IMPORTANT NOTE FOR LINE 8
     // TO SHOW THE MSG ON THE LEFT USE THIS CLASSNAME "chat__item other"
@@ -19,4 +19,5 @@ export default function MessageItem({msg}) {
       </div>
     </div>
   );
-}
+};
+export default MessageItem;

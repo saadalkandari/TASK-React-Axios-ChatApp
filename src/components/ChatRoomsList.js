@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import ChatRoomitem from './ChatRoomitem';
-import CreateRoomModal from './CreateRoomModal';
+import React, { useState } from "react";
+import ChatRoomItem from "./ChatRoomItem";
+import CreateRoomModal from "./CreateRoomModal";
 
-function ChatRoomsList({rooms}) {
+function ChatRoomsList({ rooms }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => setIsOpen(false);
@@ -10,7 +10,7 @@ function ChatRoomsList({rooms}) {
   const openModal = () => setIsOpen(true);
 
   const roomsList = rooms.map((room) => {
-    return <ChatRoomitem room={room} key={room.id} />;
+    return <ChatRoomItem room={room} key={room.id} />;
   });
   return (
     <div className="main__chatlist">

@@ -1,8 +1,7 @@
-import { Modal, Button, InputGroup, Form } from 'react-bootstrap';
-import React, { useState } from 'react';
+import { Modal, Button, InputGroup, Form } from "react-bootstrap";
+import React, { useState } from "react";
 
-
-export default function UpdateRoomModal({room,isOpen,closeModal}) {
+const UpdateRoomModal = ({ room, isOpen, closeModal }) => {
   const [roomForm, setRoomForm] = useState({
     id: room.id,
     title: room.title,
@@ -13,7 +12,6 @@ export default function UpdateRoomModal({room,isOpen,closeModal}) {
     setRoomForm({ ...roomForm, [event.target.name]: event.target.value });
   };
   const handleSubmit = (event) => {
-
     closeModal();
   };
   return (
@@ -61,4 +59,6 @@ export default function UpdateRoomModal({room,isOpen,closeModal}) {
       </Modal.Footer>
     </Modal>
   );
-}
+};
+
+export default UpdateRoomModal;
