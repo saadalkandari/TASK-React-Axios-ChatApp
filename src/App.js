@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import ChatRoom from "./components/ChatRoom";
 import ChatRoomsList from "./components/ChatRoomsList";
-import { Route, Switch } from "react-router";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   const [rooms, setRooms] = useState([]);
@@ -19,16 +19,15 @@ const App = () => {
   return (
     <div className="__main">
       <div className="main__chatbody">
-        <Switch>
-          <Route path="/room/:roomSlug">
-            <ChatRoom rooms={rooms} />
-          </Route>
-          <Route exact path="/">
-            <center>
-              <ChatRoomsList rooms={rooms} />
-            </center>
-          </Route>
-        </Switch>
+        <center>
+          <Routes>
+            <Route
+              path="/room/:roomSlug"
+              element={<ChatRoom rooms={rooms} />}
+            />
+            <Route exact path="/" element={<ChatRoomsList rooms={rooms} />} />
+          </Routes>
+        </center>
       </div>
     </div>
   );
