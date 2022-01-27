@@ -2,7 +2,7 @@
 
 ## First things first:
 
-1. Fork and clone [this repository](https://github.com/joincoded.com/Task-React-Axios-FE) to your `development` folder
+1. Fork and clone [this repository](https://github.com/joincoded/Task-React-Axios-FE) to your `development` folder
 2. `cd ` to the folder
 3. `npm install`
 4. `npm start`
