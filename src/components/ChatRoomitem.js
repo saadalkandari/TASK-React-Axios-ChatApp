@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import UpdateRoomModal from './UpdateRoomModal';
 
-export default function ChatRoomitem(props) {
-  const room = props.room;
+export default function ChatRoomitem({room}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => setIsOpen(false);
