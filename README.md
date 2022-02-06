@@ -44,11 +44,9 @@ The main purpose of this exercise is to use `Axios` in Front End.
 5. in App.js complete deleteRoom function ( make sure to use : async , await, try and catch )
 6. don't forget to delete the room from the list of rooms
 
-### 🤼‍♂️ Challenge
+# 🤼‍♂️ Challenge
 
-## Update and Create a msg
-
-no steps ! its a challenge
+- Update and create messages using the given APIs
 
 ## here are all the APIs
 
