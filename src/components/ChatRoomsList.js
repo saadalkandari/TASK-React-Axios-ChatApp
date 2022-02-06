@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ChatRoomItem from "./ChatRoomItem";
 import CreateRoomModal from "./CreateRoomModal";
 
-function ChatRoomsList({ rooms }) {
+function ChatRoomsList({ createRoom, deleteRoom, rooms }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeModal = () => setIsOpen(false);
@@ -10,14 +10,18 @@ function ChatRoomsList({ rooms }) {
   const openModal = () => setIsOpen(true);
 
   const roomsList = rooms.map((room) => {
-    return <ChatRoomItem room={room} key={room.id} />;
+    return <ChatRoomItem deleteRoom={deleteRoom} room={room} key={room.id} />;
   });
   return (
     <div className="main__chatlist">
       <button className="btn">
         <i className="fa fa-plus"></i>
         <span onClick={openModal}>New room</span>
-        <CreateRoomModal isOpen={isOpen} closeModal={closeModal} />
+        <CreateRoomModal
+          createRoom={createRoom}
+          isOpen={isOpen}
+          closeModal={closeModal}
+        />
       </button>
       <center>
         <div className="chatlist__heading">
