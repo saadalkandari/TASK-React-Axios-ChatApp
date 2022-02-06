@@ -30,7 +30,7 @@ const CreateRoomModal = ({ closeModal, isOpen }) => {
           </InputGroup>
           <br />
           <InputGroup>
-            <InputGroup.Text>Image</InputGroup.Text>
+            <InputGroup.Text>Image Url</InputGroup.Text>
             <Form.Control type="text" name="image" onChange={handleChange} />
           </InputGroup>
           <br />
