@@ -1,6 +1,12 @@
-# Chatting website
+# 💬 Chatting website
 
-## First things first:
+## Objectives
+
+In this task, you are going to build a chat app 😍. There is an already built in backend that is already prepared, and all what you have to do, is just use the apis to make this front end alive! You are going to use all end-points in the end of this file.
+
+The main purpose of this exercise is to use `Axios` in Front End.
+
+## First things first
 
 1. Fork and clone [this repository](https://github.com/joincoded/Task-React-Axios-FE) to your `development` folder
 2. `cd ` to the folder
@@ -12,14 +18,14 @@
 1. Install Axios `npm install axios`
 2. in App.js `import axios from "axios"`
 
-## Fetch rooms
+## 🚪 Fetch rooms
 
 1. a state for rooms is created for you in App.js
 2. in App.js create a fetchRooms function ( make sure to use : async , await, try and catch )
 3. fetchRooms should be triggered once App is rendered
 4. don't forget to setRooms based on the response coming from the API
 
-## Create a room
+## ➕ Create a room
 
 1. a createRoom function has been created in App.js
 2. pass it to ChatRoomList component
@@ -29,18 +35,18 @@
 6. in App.js complete createRoom function ( make sure to use : async , await, try and catch )
 7. dont forget to add the new room to the list of rooms
 
-## Delete a room
+## ❌ Delete a room
 
-1. a deleteRoom function has been created in App.js
+1. A `deleteRoom` function has been created in App.js
 2. pass it to ChatRoomList component
 3. then pass it to ChatRoomItem component
 4. in ChatRoomItem fix the missing code in : handleDelete (read the comments they have hints)
 5. in App.js complete deleteRoom function ( make sure to use : async , await, try and catch )
 6. don't forget to delete the room from the list of rooms
 
-### Challenge
+### 🤼‍♂️ Challenge
 
-## Update , Create a msg:
+## Update and Create a msg
 
 no steps ! its a challenge
 
